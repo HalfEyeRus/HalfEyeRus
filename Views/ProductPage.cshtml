@@ -1,0 +1,115 @@
+﻿@using System.Dynamic
+@using Newtonsoft.Json
+@using WeUmbraco
+@inherits SoftSmokeViewPage<ProductPage>
+@{
+    Layout = "_Layout.cshtml";
+    ViewBag.PageClass = "catalog-item-page";
+    var mainImg = Model.Photos.IfNotNull(x=> x.FirstOrDefault());
+    dynamic dataAttribute = new ExpandoObject();
+    dataAttribute.imageUrl = Umbraco.MediaAsUrl(Model.Thumbnail, 233, 350);
+    var gravCost = Model.EngravingCost.IfNullOrWhiteSpace(CommonPages.CatalogSectionPage.GlobalEngravingCost).AsDecimal();
+}
+
+
+<article class="main-content">
+    <div class="wrapper">
+        <div class="main-img">
+            @if (mainImg != null)
+            {
+                @Umbraco.MediaAsImage(mainImg, String.Empty, 429, 643)
+            }
+        </div>
+
+        <div class="text-container">
+            <header>
+                <h2>
+                    @Model.NavigationTitle()
+                </h2>
+                <span class="price">@Model.Price.AsDecimal() ₽</span>
+            </header>
+
+            @foreach (var item in GetNestedContent<TextWithHeaderBlock>(Model.Description))
+            {
+                <div class="accordion">
+                    <h3 class="accordion-header">@item.Header</h3>
+                    <div class="accordion-content">
+                        @item.Text.ApplyBreakLines(true)
+                    </div>
+                </div>
+            }
+
+            @if (Model.Engraving)
+            {
+                <div class="accordion">
+                    <h3 class="accordion-header">ГРАВИРОВКА</h3>
+                    <div class="accordion-content">
+                        <p>
+                            Хотите придать индивидуальности своему любимому кальяну?<br />
+                            Мы нанесем любую надпись или изображение на мундштук по вашему желанию.
+                        </p>
+                        <div class="input-container">
+                            <input type="checkbox" name="grav" id="grav">
+                            <label for="grav">Добавить гравировку + <b>@gravCost ₽</b></label>
+                        </div>
+                    </div>
+                </div>
+            }
+
+            <footer class="add-to-cart">
+                <ngcart-addtocart id="@Model.Id"  toordertitle="@_D("Catalog.Order")" title="@_D("Catalog.ToCart")" carturl="@CommonPages.CartPage.Url" data="@JsonConvert.SerializeObject(dataAttribute)" name="@Model.NavigationTitle().Replace("\"", "'")" price="@Model.Price" quantity="1" quantity-max="999"></ngcart-addtocart>
+            </footer>
+</div>
+        <div class="images">
+            @foreach (var item in Model.Photos.IfNotNull(x => x.Skip(1), Enumerable.Empty<IPublishedContent>()))
+            {
+                @Umbraco.MediaAsImage(item, String.Empty, 429, 643)
+            }
+        </div>
+    </div>
+</article>
+
+@section Scripts {
+    <script>
+    $(function () {
+        $('#grav:checkbox').change(function () {
+
+            var gravCost = $('#grav').prop('checked') ? @(gravCost) : 0;
+            $('#addGrav').val(gravCost);
+            $('#addGrav').trigger('input');
+            $('#addGrav').trigger('change'); 
+            //var data = JSON.parse($('ngcart-addtocart').attr('data'));
+            //if (gravCost) {
+            //    data.addCost = gravCost;
+            //} else {
+            //    delete data.addCost;
+            //}
+            //$('ngcart-addtocart').attr('data', JSON.stringify(data));
+        });
+    });
+    </script>
+}
+
+
+@if (Model.SeeAlso.IfNotNull(x => x.Any()))
+{
+    <aside class="related-items">
+        <div class="wrapper">
+            <h2>Вам могут пригодиться</h2>
+            <div class="related-items-slider slick-slider">
+                @foreach (var item in Model.SeeAlso.WhereNotNull().OfType<ProductPage>())
+                {
+                    <div class="catalog-item">
+                        <a href="@item.Url" class="catalog-link"></a>
+                        <div class="img">
+                            @Umbraco.MediaAsImage(item.Thumbnail, item.NavigationTitle(), 193, 290)
+                        </div>
+                        <button class="button-dark for-big" disabled>НЕТ В НАЛИЧИИ</button>
+                        <span class="title">@item.NavigationTitle()</span>
+                        <span class="price">@Model.Price.AsDecimal() ₽</span>
+                    </div>
+                }
+            </div>
+        </div>
+    </aside>
+}

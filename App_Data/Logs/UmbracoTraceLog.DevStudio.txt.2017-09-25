@@ -1,0 +1,323 @@
+﻿ 2017-09-25 00:33:18,874 [P28764/D2/T285] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-09-24 00:33:18
+ 2017-09-25 04:33:18,890 [P28764/D2/T307] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-09-24 04:33:18
+ 2017-09-25 08:03:40,054 [P28764/D2/T466] ERROR Umbraco.Web.Scheduling.ScheduledPublishing - Failed (at "http://ss.t-we.ru:80/umbraco").
+System.Net.Http.HttpRequestException: Произошла ошибка при отправке запроса. ---> System.Net.WebException: Невозможно соединиться с удаленным сервером ---> System.Net.Sockets.SocketException: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера 5.79.187.178:80
+   в System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   в System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   в System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   в Umbraco.Web.Scheduling.ScheduledPublishing.<PerformRunAsync>d__9.MoveNext()
+ 2017-09-25 08:03:52,586 [P28764/D2/T466] ERROR Umbraco.Web.Scheduling.KeepAlive - Failed (at "http://ss.t-we.ru:80/umbraco").
+System.Net.Http.HttpRequestException: Произошла ошибка при отправке запроса. ---> System.Net.WebException: Невозможно соединиться с удаленным сервером ---> System.Net.Sockets.SocketException: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера 5.79.187.178:80
+   в System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   в System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   в System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в Umbraco.Web.Scheduling.KeepAlive.<PerformRunAsync>d__4.MoveNext()
+ 2017-09-25 08:04:54,067 [P28764/D2/T466] ERROR Umbraco.Web.Scheduling.ScheduledPublishing - Failed (at "http://ss.t-we.ru:80/umbraco").
+System.Net.Http.HttpRequestException: Произошла ошибка при отправке запроса. ---> System.Net.WebException: Невозможно соединиться с удаленным сервером ---> System.Net.Sockets.SocketException: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера 5.79.187.178:80
+   в System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   в System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   в System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   в Umbraco.Web.Scheduling.ScheduledPublishing.<PerformRunAsync>d__9.MoveNext()
+ 2017-09-25 08:06:08,070 [P28764/D2/T466] ERROR Umbraco.Web.Scheduling.ScheduledPublishing - Failed (at "http://ss.t-we.ru:80/umbraco").
+System.Net.Http.HttpRequestException: Произошла ошибка при отправке запроса. ---> System.Net.WebException: Невозможно соединиться с удаленным сервером ---> System.Net.Sockets.SocketException: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера 5.79.187.178:80
+   в System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   в System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   в System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   в Umbraco.Web.Scheduling.ScheduledPublishing.<PerformRunAsync>d__9.MoveNext()
+ 2017-09-25 08:07:22,087 [P28764/D2/T466] ERROR Umbraco.Web.Scheduling.ScheduledPublishing - Failed (at "http://ss.t-we.ru:80/umbraco").
+System.Net.Http.HttpRequestException: Произошла ошибка при отправке запроса. ---> System.Net.WebException: Невозможно соединиться с удаленным сервером ---> System.Net.Sockets.SocketException: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера 5.79.187.178:80
+   в System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   в System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   в System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   в Umbraco.Web.Scheduling.ScheduledPublishing.<PerformRunAsync>d__9.MoveNext()
+ 2017-09-25 08:08:36,099 [P28764/D2/T466] ERROR Umbraco.Web.Scheduling.ScheduledPublishing - Failed (at "http://ss.t-we.ru:80/umbraco").
+System.Net.Http.HttpRequestException: Произошла ошибка при отправке запроса. ---> System.Net.WebException: Невозможно соединиться с удаленным сервером ---> System.Net.Sockets.SocketException: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера 5.79.187.178:80
+   в System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   в System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   в System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   в Umbraco.Web.Scheduling.ScheduledPublishing.<PerformRunAsync>d__9.MoveNext()
+ 2017-09-25 08:09:06,590 [P28764/D2/T466] ERROR Umbraco.Web.Scheduling.KeepAlive - Failed (at "http://ss.t-we.ru:80/umbraco").
+System.Net.Http.HttpRequestException: Произошла ошибка при отправке запроса. ---> System.Net.WebException: Невозможно соединиться с удаленным сервером ---> System.Net.Sockets.SocketException: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера 5.79.187.178:80
+   в System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   в System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   в System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в Umbraco.Web.Scheduling.KeepAlive.<PerformRunAsync>d__4.MoveNext()
+ 2017-09-25 08:09:50,106 [P28764/D2/T466] ERROR Umbraco.Web.Scheduling.ScheduledPublishing - Failed (at "http://ss.t-we.ru:80/umbraco").
+System.Net.Http.HttpRequestException: Произошла ошибка при отправке запроса. ---> System.Net.WebException: Невозможно соединиться с удаленным сервером ---> System.Net.Sockets.SocketException: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера 5.79.187.178:80
+   в System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   в System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   в System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   в Umbraco.Web.Scheduling.ScheduledPublishing.<PerformRunAsync>d__9.MoveNext()
+ 2017-09-25 08:11:04,122 [P28764/D2/T466] ERROR Umbraco.Web.Scheduling.ScheduledPublishing - Failed (at "http://ss.t-we.ru:80/umbraco").
+System.Net.Http.HttpRequestException: Произошла ошибка при отправке запроса. ---> System.Net.WebException: Невозможно соединиться с удаленным сервером ---> System.Net.Sockets.SocketException: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера 5.79.187.178:80
+   в System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   в System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   в System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   в Umbraco.Web.Scheduling.ScheduledPublishing.<PerformRunAsync>d__9.MoveNext()
+ 2017-09-25 08:12:18,133 [P28764/D2/T466] ERROR Umbraco.Web.Scheduling.ScheduledPublishing - Failed (at "http://ss.t-we.ru:80/umbraco").
+System.Net.Http.HttpRequestException: Произошла ошибка при отправке запроса. ---> System.Net.WebException: Невозможно соединиться с удаленным сервером ---> System.Net.Sockets.SocketException: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера 5.79.187.178:80
+   в System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   в System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   в System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   в Umbraco.Web.Scheduling.ScheduledPublishing.<PerformRunAsync>d__9.MoveNext()
+ 2017-09-25 08:13:32,147 [P28764/D2/T466] ERROR Umbraco.Web.Scheduling.ScheduledPublishing - Failed (at "http://ss.t-we.ru:80/umbraco").
+System.Net.Http.HttpRequestException: Произошла ошибка при отправке запроса. ---> System.Net.WebException: Невозможно соединиться с удаленным сервером ---> System.Net.Sockets.SocketException: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера 5.79.187.178:80
+   в System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   в System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   в System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   в Umbraco.Web.Scheduling.ScheduledPublishing.<PerformRunAsync>d__9.MoveNext()
+ 2017-09-25 08:14:20,605 [P28764/D2/T466] ERROR Umbraco.Web.Scheduling.KeepAlive - Failed (at "http://ss.t-we.ru:80/umbraco").
+System.Net.Http.HttpRequestException: Произошла ошибка при отправке запроса. ---> System.Net.WebException: Невозможно соединиться с удаленным сервером ---> System.Net.Sockets.SocketException: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера 5.79.187.178:80
+   в System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   в System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   в System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в Umbraco.Web.Scheduling.KeepAlive.<PerformRunAsync>d__4.MoveNext()
+ 2017-09-25 08:14:46,161 [P28764/D2/T466] ERROR Umbraco.Web.Scheduling.ScheduledPublishing - Failed (at "http://ss.t-we.ru:80/umbraco").
+System.Net.Http.HttpRequestException: Произошла ошибка при отправке запроса. ---> System.Net.WebException: Невозможно соединиться с удаленным сервером ---> System.Net.Sockets.SocketException: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера 5.79.187.178:80
+   в System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   в System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   в System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   в Umbraco.Web.Scheduling.ScheduledPublishing.<PerformRunAsync>d__9.MoveNext()
+ 2017-09-25 08:16:00,176 [P28764/D2/T466] ERROR Umbraco.Web.Scheduling.ScheduledPublishing - Failed (at "http://ss.t-we.ru:80/umbraco").
+System.Net.Http.HttpRequestException: Произошла ошибка при отправке запроса. ---> System.Net.WebException: Невозможно соединиться с удаленным сервером ---> System.Net.Sockets.SocketException: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера 5.79.187.178:80
+   в System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   в System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   в System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   в Umbraco.Web.Scheduling.ScheduledPublishing.<PerformRunAsync>d__9.MoveNext()
+ 2017-09-25 08:17:14,193 [P28764/D2/T466] ERROR Umbraco.Web.Scheduling.ScheduledPublishing - Failed (at "http://ss.t-we.ru:80/umbraco").
+System.Net.Http.HttpRequestException: Произошла ошибка при отправке запроса. ---> System.Net.WebException: Невозможно соединиться с удаленным сервером ---> System.Net.Sockets.SocketException: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера 5.79.187.178:80
+   в System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   в System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   в System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   в Umbraco.Web.Scheduling.ScheduledPublishing.<PerformRunAsync>d__9.MoveNext()
+ 2017-09-25 08:18:28,201 [P28764/D2/T466] ERROR Umbraco.Web.Scheduling.ScheduledPublishing - Failed (at "http://ss.t-we.ru:80/umbraco").
+System.Net.Http.HttpRequestException: Произошла ошибка при отправке запроса. ---> System.Net.WebException: Невозможно соединиться с удаленным сервером ---> System.Net.Sockets.SocketException: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера 5.79.187.178:80
+   в System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   в System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   в System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   в Umbraco.Web.Scheduling.ScheduledPublishing.<PerformRunAsync>d__9.MoveNext()
+ 2017-09-25 08:19:34,622 [P28764/D2/T466] ERROR Umbraco.Web.Scheduling.KeepAlive - Failed (at "http://ss.t-we.ru:80/umbraco").
+System.Net.Http.HttpRequestException: Произошла ошибка при отправке запроса. ---> System.Net.WebException: Невозможно соединиться с удаленным сервером ---> System.Net.Sockets.SocketException: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера 5.79.187.178:80
+   в System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   в System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   в System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в Umbraco.Web.Scheduling.KeepAlive.<PerformRunAsync>d__4.MoveNext()
+ 2017-09-25 08:19:42,217 [P28764/D2/T466] ERROR Umbraco.Web.Scheduling.ScheduledPublishing - Failed (at "http://ss.t-we.ru:80/umbraco").
+System.Net.Http.HttpRequestException: Произошла ошибка при отправке запроса. ---> System.Net.WebException: Невозможно соединиться с удаленным сервером ---> System.Net.Sockets.SocketException: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера 5.79.187.178:80
+   в System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   в System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   в System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   в Umbraco.Web.Scheduling.ScheduledPublishing.<PerformRunAsync>d__9.MoveNext()
+ 2017-09-25 08:20:56,234 [P28764/D2/T466] ERROR Umbraco.Web.Scheduling.ScheduledPublishing - Failed (at "http://ss.t-we.ru:80/umbraco").
+System.Net.Http.HttpRequestException: Произошла ошибка при отправке запроса. ---> System.Net.WebException: Невозможно соединиться с удаленным сервером ---> System.Net.Sockets.SocketException: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера 5.79.187.178:80
+   в System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   в System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   в System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   в Umbraco.Web.Scheduling.ScheduledPublishing.<PerformRunAsync>d__9.MoveNext()
+ 2017-09-25 08:22:10,252 [P28764/D2/T466] ERROR Umbraco.Web.Scheduling.ScheduledPublishing - Failed (at "http://ss.t-we.ru:80/umbraco").
+System.Net.Http.HttpRequestException: Произошла ошибка при отправке запроса. ---> System.Net.WebException: Невозможно соединиться с удаленным сервером ---> System.Net.Sockets.SocketException: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера 5.79.187.178:80
+   в System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   в System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   в System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   в Umbraco.Web.Scheduling.ScheduledPublishing.<PerformRunAsync>d__9.MoveNext()
+ 2017-09-25 08:22:14,894 [P28764/D2/T549] INFO  Umbraco.Core.MainDom - Stopping...
+ 2017-09-25 08:22:14,904 [P28764/D2/T549] INFO  Umbraco.Core.MainDom - Released MainDom.
+ 2017-09-25 08:22:14,905 [P28764/D2/T549] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Terminating
+ 2017-09-25 08:22:14,905 [P28764/D2/T549] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Waiting for tasks to complete
+ 2017-09-25 08:22:14,905 [P28764/D2/T549] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Terminating
+ 2017-09-25 08:22:14,905 [P28764/D2/T549] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Waiting for tasks to complete
+ 2017-09-25 08:22:14,906 [P28764/D2/T549] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Terminating
+ 2017-09-25 08:22:14,906 [P28764/D2/T549] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Waiting for tasks to complete
+ 2017-09-25 08:22:14,907 [P28764/D2/T523] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Tasks completed, terminated
+ 2017-09-25 08:22:14,907 [P28764/D2/T506] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Tasks completed, terminated
+ 2017-09-25 08:22:14,907 [P28764/D2/T515] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Tasks completed, terminated
+ 2017-09-25 08:22:14,912 [P28764/D2/T549] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Terminating
+ 2017-09-25 08:22:14,912 [P28764/D2/T549] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Waiting for tasks to complete
+ 2017-09-25 08:22:14,912 [P28764/D2/T549] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Terminating
+ 2017-09-25 08:22:14,912 [P28764/D2/T557] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Tasks completed, terminated
+ 2017-09-25 08:22:14,912 [P28764/D2/T549] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Waiting for tasks to complete
+ 2017-09-25 08:22:14,913 [P28764/D2/T509] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Tasks completed, terminated
+ 2017-09-25 08:22:44,970 [P28764/D2/T497] INFO  Umbraco.Core.UmbracoApplicationBase - Application shutdown. Details: HostingEnvironment
+
+_shutDownMessage=HostingEnvironment initiated shutdown
+HostingEnvironment вызвало отключение
+
+_shutDownStack=   в System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   в System.Environment.get_StackTrace()
+   в System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   в System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   в System.Web.Hosting.PipelineRuntime.StopProcessing()
+ 2017-09-25 16:25:32,665 [P16588/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.6.5 application starting on DEVSTUDIO
+ 2017-09-25 16:25:32,674 [P16588/D2/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2017-09-25 16:25:32,682 [P16588/D2/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 8ms)
+ 2017-09-25 16:25:32,711 [P16588/D2/T1] INFO  Umbraco.Core.MainDom - Acquiring MainDom...
+ 2017-09-25 16:25:32,712 [P16588/D2/T1] INFO  Umbraco.Core.MainDom - Acquired MainDom.
+ 2017-09-25 16:25:32,713 [P16588/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-09-25 16:25:32,815 [P16588/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 101ms)
+ 2017-09-25 16:25:32,815 [P16588/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IApplicationStartupHandler
+ 2017-09-25 16:25:32,816 [P16588/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IApplicationStartupHandler (took 1ms)
+ 2017-09-25 16:25:32,840 [P16588/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-09-25 16:25:32,840 [P16588/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-09-25 16:25:32,841 [P16588/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2017-09-25 16:25:32,841 [P16588/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 0ms)
+ 2017-09-25 16:25:32,841 [P16588/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-09-25 16:25:32,841 [P16588/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-09-25 16:25:32,842 [P16588/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2017-09-25 16:25:32,843 [P16588/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyValueConverter (took 1ms)
+ 2017-09-25 16:25:32,855 [P16588/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-09-25 16:25:32,855 [P16588/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-09-25 16:25:32,855 [P16588/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.Mvc.SurfaceController
+ 2017-09-25 16:25:32,856 [P16588/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.Mvc.SurfaceController (took 0ms)
+ 2017-09-25 16:25:32,856 [P16588/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-09-25 16:25:32,856 [P16588/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-09-25 16:25:32,856 [P16588/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.WebApi.UmbracoApiController
+ 2017-09-25 16:25:32,857 [P16588/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.WebApi.UmbracoApiController (took 0ms)
+ 2017-09-25 16:25:32,908 [P16588/D2/T1] ERROR Umbraco.Core.PluginManager - Error creating type WeUmbraco.Events.ContentTypeEventHandler`1
+System.ArgumentException: Невозможно создать экземпляр WeUmbraco.Events.ContentTypeEventHandler`1[T], поскольку параметр Type.ContainsGenericParameters является истиной.
+   в System.RuntimeType.CreateInstanceCheckThis()
+   в System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   в System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   в System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   в System.Activator.CreateInstance(Type type)
+   в Umbraco.Core.ActivatorServiceProvider.GetService(Type serviceType)
+   в Umbraco.Core.ServiceProviderExtensions.CreateInstances[T](IServiceProvider serviceProvider, IEnumerable`1 types, ILogger logger, Boolean throwException)
+ 2017-09-25 16:25:33,760 [P16588/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2017-09-25 16:25:33,808 [P16588/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Models.PublishedContent.PublishedContentModel
+ 2017-09-25 16:25:33,817 [P16588/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Models.PublishedContent.PublishedContentModel (took 8ms)
+ 2017-09-25 16:25:33,866 [P16588/D2/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2017-09-25 16:25:33,909 [P16588/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2017-09-25 16:25:33,989 [P16588/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2017-09-25 16:25:34,027 [P16588/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 1414ms)
+ 2017-09-25 16:25:34,548 [P16588/D2/T11] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://ss.t-we.ru:80/umbraco (UmbracoModule request)
+ 2017-09-25 16:25:35,092 [P16588/D2/T11] INFO  umbraco.content - Load Xml from file...
+ 2017-09-25 16:25:35,095 [P16588/D2/T11] INFO  umbraco.content - Loaded Xml from file.
+ 2017-09-25 16:25:35,469 [P16588/D2/T11] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-09-25 16:25:35,469 [P16588/D2/T11] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-09-25 16:25:35,469 [P16588/D2/T11] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IParameterEditor
+ 2017-09-25 16:25:35,470 [P16588/D2/T11] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IParameterEditor (took 1ms)
+ 2017-09-25 16:25:35,754 [P16588/D2/T11] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-09-25 16:25:35,755 [P16588/D2/T11] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-09-25 16:25:35,755 [P16588/D2/T11] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Deploy.IServiceConnector
+ 2017-09-25 16:25:35,755 [P16588/D2/T11] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Deploy.IServiceConnector (took 0ms)
+ 2017-09-25 16:26:35,136 [P16588/D2/T15] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-09-24 16:26:35
+ 2017-09-25 16:26:37,098 [P16588/D2/T12] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-09-25 16:26:37,099 [P16588/D2/T12] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-09-25 16:26:37,099 [P16588/D2/T12] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2017-09-25 16:26:37,099 [P16588/D2/T12] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper (took 0ms)
+ 2017-09-25 20:26:35,153 [P16588/D2/T75] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-09-24 20:26:35

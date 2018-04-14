@@ -1,0 +1,13 @@
+﻿@inherits SoftSmokeViewPage
+@{
+	Layout = "_Layout.cshtml";
+    ViewBag.PageClass = "cart-third-page";
+}
+<section class="main-content">
+    <div class="wrapper">
+        <h2>@_D("Cart.Done.Header")</h2>
+        <p>
+            @Html.Raw(_D("Cart.Done"))
+        </p>
+    </div>
+</section>

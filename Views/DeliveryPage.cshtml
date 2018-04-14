@@ -1,0 +1,55 @@
+﻿@inherits SoftSmokeViewPage<DeliveryPage>
+@{
+    Layout = "_Layout.cshtml";
+    ViewBag.PageClass = "delivery-page";
+}
+
+<section class="main-content">
+    <div class="wrapper">
+        <aside class="payment">
+            <h2>Оплата</h2>
+            <div>
+                <span>Робокасса</span>
+                <p><img src="/assets/images/robokassa.png" alt="alt"></p>
+            </div>
+            <div>
+                <span>Наличными</span>
+                <p>100% предоплата</p>
+            </div>
+        </aside>
+
+        <div class="content">
+            @foreach (var item in this.GetNestedContent("pageContent"))
+            {
+                if (item.DocumentTypeAlias == DeliveryTableBlock.ModelTypeAlias)
+                {
+                    <h2>Доставка по Санкт-Петербургу</h2>
+                    <div class="subtable">
+                        <div class="row table-head for-big">
+                            <span></span>
+                            <span></span>
+                            <span>Цена</span>
+                            <span>Условия</span>
+                        </div>
+                        @foreach (var row in GetNestedContent<DeliveryTableItemBlock>((new DeliveryTableBlock(item)).Table))
+                        {
+                        <div class="row">
+                            <p>@row.Title</p>
+                            <span class="address not-medium">@Html.Raw(row.Address)</span>
+                            <span class="price">@row.Cost</span>
+                            <span class="note"><span>@row.Terms</span></span>
+                        </div>
+                        }
+                    </div>
+                }
+
+                if (item.DocumentTypeAlias == TextWithHeaderBlock.ModelTypeAlias)
+                {
+                    var m = new TextWithHeaderBlock(item);
+                    <h2>@m.Header</h2>
+                    <p>@m.Text</p>
+                }
+            }
+        </div>
+    </div>
+</section>

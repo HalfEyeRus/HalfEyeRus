@@ -1,0 +1,18 @@
+﻿@using WebSocketSharp
+@inherits SoftSmokeViewPage<ContactsPage>
+@{
+	Layout = "_Layout.cshtml";
+    ViewBag.PageClass = "contacts-page";
+}
+
+<section class="write-us">
+    <div class="wrapper">
+        <h2>@Model.Header</h2>
+        <p>@Model.PageText.ApplyBreakLines()</p>
+        
+        @Html.Partial("_FeedbackForm")
+    </div>
+</section>
+
+@Html.Partial("_ContactBlock")
+

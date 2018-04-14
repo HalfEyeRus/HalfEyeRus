@@ -1,0 +1,17 @@
+﻿<div class="accordion-header">
+    <span class="title">Все товары</span>
+    <small><span class="not-big">{{ngCart.totalCost()}} ₽</span><span class="for-big"><ng-pluralize count="ngCart.getTotalItems()" when="{0: '', 1: '1 товар', 2: '2 товара',
+                     3: '3 товара', 4: '4 товара', 'one': '{} товар', 'two': '{} товара', 'few': '{} товаров', 'many': '{} товаров'}"></ng-pluralize> в корзине</span></small>
+</div>
+<div class="accordion-content">
+    <div class="product-row" ng-repeat="item in ngCart.getCart().items track by $index">
+        <div class="img">
+            <img src="{{item._data.smallImageUrl}}" alt="">
+        </div>
+        <div class="desc">
+            <p><a href="#">{{ item.getName() }}</a></p>
+            <span>{{ (item.getPrice() +  item.getQuantity()) * item.getQuantity() }} ₽</span>
+            <small>Кол-во: {{ item.getQuantity() | number }}</small>
+        </div>
+    </div>
+</div>

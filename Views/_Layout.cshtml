@@ -1,0 +1,58 @@
+﻿@using System.Web.UI.HtmlControls
+@inherits SoftSmokeViewPage
+@{
+    Layout = null;
+}<!DOCTYPE html>
+<html lang="@CurrentLangName">
+<head>
+    <title>@this.CoalesceTitle()</title>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="image/x-icon" href="http://@(Request.Url.Host)/favicon.ico">
+
+    <link rel="icon" type="image/png" href="http://@(Request.Url.Host)/favicon.png" sizes="32x32">
+    <link rel="stylesheet" href="/assets/css/vendor/animate.css" />
+    <link rel="stylesheet" href="/assets/css/screen.css" />
+    <link rel="stylesheet" href="/assets/css/svg-symbols.css" />
+</head>
+
+<body class="@ViewBag.PageClass" ng-app="ss">
+    <div class="page-wrap">
+        
+        @if (Request.QueryString["step"] != "2")
+        {
+            @Html.Partial("_Header")
+        }
+
+        <main>
+            @RenderBody()
+        </main>
+
+        @Html.Partial("_Footer")
+    </div>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+
+    <script src="/assets/js/vendor/jquery-1.12.2.min.js"></script>
+    <script src="/assets/js/vendor/slick.min.js"></script>
+    <script src="/assets/js/vendor/jquery.mixitup.min.js"></script>
+    <script src="/assets/js/vendor/jquery.maskedinput.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+
+    <script>
+        var app = angular.module("ss", ['ngCart']);
+    </script>
+    <script src="/assets/js/vendor/ngCart.js"></script>
+    <script src="/assets/js/app.js"></script>
+    <script src="/assets/js/catalog.js"></script>
+    <script src="/assets/js/forms.js"></script>
+    @RenderSection("Scripts", false)
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+﻿@using AutoMapper.Internal
+@inherits SoftSmokeViewPage<HomePage>
+@{
+	Layout = "_Layout.cshtml";
+    ViewBag.PageClass = "main-page";
+}
+<section class="top-slider slick-slider full-size">
+    @foreach(var slide in GetNestedContent<SlideItem>(Model.Slider))
+    { 
+        <div class="slide">
+            <div class="bg" style="background-image: url(@Umbraco.MediaAsUrl(slide.Image));"></div>
+            <div class="wrapper">
+                <h2>@slide.Header</h2>
+                <span>@slide.Subtitle</span>
+                @if (slide.Link != null)
+                {
+                    <a href="@slide.Link.Url" class="button-standard">@slide.LinkTitle</a>
+                }
+            </div>
+        </div>
+    }
+</section>
+
+@foreach (var block in Model.Blocks)
+{
+    if (block.DocumentTypeAlias == TextWithImageBlock.ModelTypeAlias)
+    {
+        var m = new TextWithImageBlock(block);
+        <section class="block-with-image">
+            <div class="main-text">
+                <div class="wrap">
+                    <h2>@m.Header</h2>
+                    <p>@m.ShortText.ToNullSafeString().ApplyGlobalReplace()</p>
+                    <a href="#text@(block.SortOrder)" class="slide-to show-text"><span>@_D("HomePage.More")</span><span>@_D("HomePage.Collapse")</span></a>
+                </div>
+            </div>
+            <div class="imagetext">
+                <div class="img" style="background-image:url(@Umbraco.MediaAsUrl(m.Image, 664, 330));"></div>
+                <div class="hidden-text" id="text@(block.SortOrder)">
+                    <div class="wrap">
+                        <div>
+                            @m.Text.ToNullSafeString().ApplyGlobalReplace().LineBreaksToParagraph()
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    }
+
+    if (block.DocumentTypeAlias == PartnersBlock.ModelTypeAlias)
+    {
+        var m = new PartnersBlock(block);
+        <section class="partners">
+            <div class="wrapper">
+                <h2>@m.Header</h2>
+                <div class="partners-slider slick-slider">
+                    @foreach(var logo in m.Logos)
+                    { 
+                        <div>
+                            @Umbraco.MediaAsImage(logo)
+                        </div>
+                    }
+                </div>
+            </div>
+        </section>
+    }
+
+    if (block.DocumentTypeAlias == ContactsBlocks.ModelTypeAlias)
+    {
+        var contactPage = Model.FirstChild("ContactsPage");
+        if (contactPage != null)
+        {
+            @Html.Partial("_ContactBlock", contactPage)
+        }
+    }
+}

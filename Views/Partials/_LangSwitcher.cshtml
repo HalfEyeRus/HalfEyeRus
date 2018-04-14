@@ -1,0 +1,24 @@
+﻿@inherits SoftSmokeViewPage
+@{
+    var currentLanguage = Model.AncestorOrSelf(1).GetCulture();
+    var allRoots = Umbraco.TypedContentAtRoot();
+}
+<div class="lang">
+    <button>@currentLanguage.TwoLetterISOLanguageName.ToUpper()</button>
+    <div>
+        @foreach(var langPage in allRoots.Where(x=>x.GetCulture().TwoLetterISOLanguageName != Model.GetCulture().TwoLetterISOLanguageName))
+        {
+            var langModel = Model as ILangComponent;
+            if (langModel != null)
+            {
+                var url = langModel.LinkedPages.FirstOrDefault(x => x.GetCulture().TwoLetterISOLanguageName == langPage.GetCulture().TwoLetterISOLanguageName).IfNotNull(x=>x.Url, langPage.Url);
+                <a href="@url">@langPage.GetCulture().TwoLetterISOLanguageName</a>
+
+            }
+            else
+            {
+                <a href="@langPage.Url">@langPage.GetCulture().TwoLetterISOLanguageName</a>
+            }
+        }
+    </div>
+</div>

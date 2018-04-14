@@ -1,0 +1,3 @@
+﻿ 2017-09-12 00:23:14,812 [P20052/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.6.5 application starting on DEVSTUDIO
+ 2017-09-12 00:23:14,822 [P20052/D2/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2017-09-12 00:23:14,835 [P20052/D2/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 13ms)

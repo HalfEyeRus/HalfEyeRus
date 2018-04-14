@@ -1,0 +1,69 @@
+﻿ 2017-09-19 02:22:57,071 [P19748/D2/T254] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Terminating
+ 2017-09-19 02:22:57,072 [P19748/D2/T254] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Waiting for tasks to complete
+ 2017-09-19 02:22:57,073 [P19748/D2/T254] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Tasks completed, terminated
+ 2017-09-19 02:22:57,075 [P19748/D2/T254] INFO  Umbraco.Core.MainDom - Stopping...
+ 2017-09-19 02:22:57,076 [P19748/D2/T254] INFO  Umbraco.Core.MainDom - Released MainDom.
+ 2017-09-19 02:22:57,076 [P19748/D2/T254] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Terminating
+ 2017-09-19 02:22:57,077 [P19748/D2/T254] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Waiting for tasks to complete
+ 2017-09-19 02:22:57,077 [P19748/D2/T254] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Tasks completed, terminated
+ 2017-09-19 02:22:57,077 [P19748/D2/T254] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Terminating
+ 2017-09-19 02:22:57,079 [P19748/D2/T254] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Waiting for tasks to complete
+ 2017-09-19 02:22:57,079 [P19748/D2/T254] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Tasks completed, terminated
+ 2017-09-19 02:22:57,085 [P19748/D2/T254] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Terminating
+ 2017-09-19 02:22:57,086 [P19748/D2/T254] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Waiting for tasks to complete
+ 2017-09-19 02:22:57,086 [P19748/D2/T254] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Tasks completed, terminated
+ 2017-09-19 02:22:57,086 [P19748/D2/T254] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Terminating
+ 2017-09-19 02:22:57,087 [P19748/D2/T254] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Waiting for tasks to complete
+ 2017-09-19 02:22:57,087 [P19748/D2/T254] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Tasks completed, terminated
+ 2017-09-19 02:23:10,505 [P17292/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.6.5 application starting on DEVSTUDIO
+ 2017-09-19 02:23:10,523 [P17292/D2/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2017-09-19 02:23:10,531 [P17292/D2/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 8ms)
+ 2017-09-19 02:23:10,582 [P17292/D2/T1] INFO  Umbraco.Core.MainDom - Acquiring MainDom...
+ 2017-09-19 02:23:10,584 [P17292/D2/T1] INFO  Umbraco.Core.MainDom - Acquired MainDom.
+ 2017-09-19 02:23:10,585 [P17292/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-09-19 02:23:10,684 [P17292/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 99ms)
+ 2017-09-19 02:23:10,685 [P17292/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IApplicationStartupHandler
+ 2017-09-19 02:23:10,686 [P17292/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IApplicationStartupHandler (took 1ms)
+ 2017-09-19 02:23:10,711 [P17292/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-09-19 02:23:10,712 [P17292/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-09-19 02:23:10,712 [P17292/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2017-09-19 02:23:10,712 [P17292/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 0ms)
+ 2017-09-19 02:23:10,713 [P17292/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-09-19 02:23:10,713 [P17292/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-09-19 02:23:10,713 [P17292/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2017-09-19 02:23:10,715 [P17292/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyValueConverter (took 1ms)
+ 2017-09-19 02:23:10,727 [P17292/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-09-19 02:23:10,727 [P17292/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-09-19 02:23:10,728 [P17292/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.Mvc.SurfaceController
+ 2017-09-19 02:23:10,728 [P17292/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.Mvc.SurfaceController (took 0ms)
+ 2017-09-19 02:23:10,729 [P17292/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-09-19 02:23:10,729 [P17292/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-09-19 02:23:10,729 [P17292/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.WebApi.UmbracoApiController
+ 2017-09-19 02:23:10,730 [P17292/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.WebApi.UmbracoApiController (took 1ms)
+ 2017-09-19 02:23:10,797 [P17292/D2/T1] ERROR Umbraco.Core.PluginManager - Error creating type WeUmbraco.Events.ContentTypeEventHandler`1
+System.ArgumentException: Невозможно создать экземпляр WeUmbraco.Events.ContentTypeEventHandler`1[T], поскольку параметр Type.ContainsGenericParameters является истиной.
+   в System.RuntimeType.CreateInstanceCheckThis()
+   в System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   в System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   в System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   в System.Activator.CreateInstance(Type type)
+   в Umbraco.Core.ActivatorServiceProvider.GetService(Type serviceType)
+   в Umbraco.Core.ServiceProviderExtensions.CreateInstances[T](IServiceProvider serviceProvider, IEnumerable`1 types, ILogger logger, Boolean throwException)
+ 2017-09-19 02:23:11,853 [P17292/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2017-09-19 02:23:11,979 [P17292/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Models.PublishedContent.PublishedContentModel
+ 2017-09-19 02:23:11,985 [P17292/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Models.PublishedContent.PublishedContentModel (took 6ms)
+ 2017-09-19 02:23:12,058 [P17292/D2/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2017-09-19 02:23:12,122 [P17292/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2017-09-19 02:23:12,245 [P17292/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2017-09-19 02:23:12,307 [P17292/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 1873ms)
+ 2017-09-19 02:23:13,026 [P17292/D2/T10] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://softsmoke.local:80/umbraco (UmbracoModule request)
+ 2017-09-19 02:23:27,141 [P19748/D2/T216] INFO  Umbraco.Core.UmbracoApplicationBase - Application shutdown. Details: HostingEnvironment
+
+_shutDownMessage=HostingEnvironment initiated shutdown
+HostingEnvironment вызвало отключение
+
+_shutDownStack=   в System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   в System.Environment.get_StackTrace()
+   в System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   в System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   в System.Web.Hosting.PipelineRuntime.StopProcessing()

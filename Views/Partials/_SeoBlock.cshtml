@@ -1,0 +1,21 @@
+﻿@inherits UmbracoViewPage
+@{ var seo = Model as ISeoComponent; }
+    <link rel="canonical" href="@Model.UrlWithDomain()" />
+@if (seo != null)
+{
+    if (!seo.MetaKeywords.IsNullOrWhiteSpace())
+    {
+        <meta name="keywords" content="@(seo.MetaKeywords)" />
+    }
+    if (!seo.MetaDescription.IsNullOrWhiteSpace())
+    {
+        <meta name="description" content="@(seo.MetaDescription)">
+    }
+    if (seo.ShareUrlImage != null)
+    {        
+		var domain = "http://" + HttpContext.Current.Request.Url.Host;
+        
+        <meta property="og:image" content="@domain@seo.ShareUrlImage.Url()" />
+        <link rel="image_src" href="@domain@seo.ShareUrlImage.Url()" />
+    }
+}

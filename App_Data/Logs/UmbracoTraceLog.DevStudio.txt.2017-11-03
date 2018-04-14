@@ -1,0 +1,89 @@
+﻿ 2017-11-03 01:09:23,796 [P3172/D4/T310] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-11-02 01:09:23
+ 2017-11-03 03:06:40,006 [P3172/D4/T144] ERROR Umbraco.Web.Scheduling.ScheduledPublishing - Failed (at "http://ss.t-we.ru:80/umbraco").
+System.Net.Http.HttpRequestException: Произошла ошибка при отправке запроса. ---> System.Net.WebException: Невозможно соединиться с удаленным сервером ---> System.Net.Sockets.SocketException: Сделана попытка доступа к сокету методом, запрещенным правами доступа 5.79.154.29:80
+   в System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   в System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   в System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   в Umbraco.Web.Scheduling.ScheduledPublishing.<PerformRunAsync>d__9.MoveNext()
+ 2017-11-03 03:07:40,020 [P3172/D4/T144] ERROR Umbraco.Web.Scheduling.ScheduledPublishing - Failed (at "http://ss.t-we.ru:80/umbraco").
+System.Net.Http.HttpRequestException: Произошла ошибка при отправке запроса. ---> System.Net.WebException: Невозможно соединиться с удаленным сервером ---> System.Net.Sockets.SocketException: Сделана попытка доступа к сокету методом, запрещенным правами доступа 5.79.154.29:80
+   в System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   в System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   в System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   в Umbraco.Web.Scheduling.ScheduledPublishing.<PerformRunAsync>d__9.MoveNext()
+ 2017-11-03 03:08:40,035 [P3172/D4/T144] ERROR Umbraco.Web.Scheduling.ScheduledPublishing - Failed (at "http://ss.t-we.ru:80/umbraco").
+System.Net.Http.HttpRequestException: Произошла ошибка при отправке запроса. ---> System.Net.WebException: Невозможно соединиться с удаленным сервером ---> System.Net.Sockets.SocketException: Сделана попытка доступа к сокету методом, запрещенным правами доступа 5.79.154.29:80
+   в System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   в System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   в System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   в Umbraco.Web.Scheduling.ScheduledPublishing.<PerformRunAsync>d__9.MoveNext()
+ 2017-11-03 03:09:25,781 [P3172/D4/T144] ERROR Umbraco.Web.Scheduling.KeepAlive - Failed (at "http://ss.t-we.ru:80/umbraco").
+System.Net.Http.HttpRequestException: Произошла ошибка при отправке запроса. ---> System.Net.WebException: Невозможно соединиться с удаленным сервером ---> System.Net.Sockets.SocketException: Сделана попытка доступа к сокету методом, запрещенным правами доступа 5.79.154.29:80
+   в System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   в System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   в System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в Umbraco.Web.Scheduling.KeepAlive.<PerformRunAsync>d__4.MoveNext()
+ 2017-11-03 03:09:51,078 [P3172/D4/T445] ERROR Umbraco.Web.Scheduling.ScheduledPublishing - Failed (at "http://ss.t-we.ru:80/umbraco").
+System.Net.Http.HttpRequestException: Произошла ошибка при отправке запроса. ---> System.Net.WebException: Невозможно разрешить удаленное имя: 'ss.t-we.ru'
+   в System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   в System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   в System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   в Umbraco.Web.Scheduling.ScheduledPublishing.<PerformRunAsync>d__9.MoveNext()
+ 2017-11-03 05:09:23,809 [P3172/D4/T373] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-11-02 05:09:23
+ 2017-11-03 09:09:23,824 [P3172/D4/T62] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-11-02 09:09:23
+ 2017-11-03 13:09:23,837 [P3172/D4/T211] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-11-02 13:09:23
+ 2017-11-03 17:09:23,839 [P3172/D4/T212] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-11-02 17:09:23
+ 2017-11-03 21:09:23,852 [P3172/D4/T336] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-11-02 21:09:23
+ 2017-11-03 21:46:46,349 [P3172/D4/T197] INFO  Umbraco.Core.MainDom - Stopping...
+ 2017-11-03 21:46:46,357 [P3172/D4/T197] INFO  Umbraco.Core.MainDom - Released MainDom.
+ 2017-11-03 21:46:46,359 [P3172/D4/T197] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Terminating
+ 2017-11-03 21:46:46,359 [P3172/D4/T197] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Waiting for tasks to complete
+ 2017-11-03 21:46:46,360 [P3172/D4/T197] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Terminating
+ 2017-11-03 21:46:46,361 [P3172/D4/T197] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Waiting for tasks to complete
+ 2017-11-03 21:46:46,361 [P3172/D4/T44] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Tasks completed, terminated
+ 2017-11-03 21:46:46,362 [P3172/D4/T44] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Tasks completed, terminated
+ 2017-11-03 21:46:46,361 [P3172/D4/T197] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Terminating
+ 2017-11-03 21:46:46,363 [P3172/D4/T197] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Waiting for tasks to complete
+ 2017-11-03 21:46:46,363 [P3172/D4/T363] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Tasks completed, terminated
+ 2017-11-03 21:46:46,370 [P3172/D4/T197] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Terminating
+ 2017-11-03 21:46:46,370 [P3172/D4/T197] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Waiting for tasks to complete
+ 2017-11-03 21:46:46,370 [P3172/D4/T197] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Terminating
+ 2017-11-03 21:46:46,371 [P3172/D4/T76] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Tasks completed, terminated
+ 2017-11-03 21:46:46,371 [P3172/D4/T197] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Waiting for tasks to complete
+ 2017-11-03 21:46:46,372 [P3172/D4/T49] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Tasks completed, terminated
+ 2017-11-03 21:47:16,412 [P3172/D4/T197] INFO  Umbraco.Core.UmbracoApplicationBase - Application shutdown. Details: HostingEnvironment
+
+_shutDownMessage=HostingEnvironment initiated shutdown
+HostingEnvironment вызвало отключение
+
+_shutDownStack=   в System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   в System.Environment.get_StackTrace()
+   в System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   в System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   в System.Web.Hosting.PipelineRuntime.StopProcessing()

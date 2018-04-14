@@ -1,0 +1,2 @@
+﻿<button class="button-dark for-big add-to-cart-short"  ng-show="attrs.id && !clicked" ng-click="ngCart.addItem(id, name, price, q, data, itemImage, $event); clicked = true;" data-pid="@item.Id" >{{title}}</button>
+<button class="button-dark for-big add-to-cart-short" ng-show="clicked" go-click="{{carturl}}">{{toordertitle}}</button>

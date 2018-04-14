@@ -1,0 +1,11 @@
+﻿@inherits SoftSmokeViewPage<CartPage>
+@{
+	Layout = "_Layout.cshtml";
+    ViewBag.PageClass = "cart-page";
+}
+
+<section class="main-content">
+    <div class="wrapper">
+        <ngcart-cart next-step-url="@(Model.Url)?step=2"></ngcart-cart>
+    </div>
+</section>

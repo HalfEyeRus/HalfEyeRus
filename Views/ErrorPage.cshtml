@@ -1,0 +1,13 @@
+﻿@inherits SoftSmokeViewPage
+@{
+	Layout = "_Layout.cshtml";
+	ViewBag.PageClass = "error-page";
+}
+    <section class="main-content">
+        <div class="wrapper">
+            <h2>505</h2>
+            <span>ВНУТРЕННЯЯ ОШИБКА&nbsp;СЕРВЕРА</span>
+            <p>Извините, страница не работает<br/>по техническим причинам</p>
+            <a href="@CommonPages.HomePage.Url">ВЕРНУТЬСЯ НА ГЛАВНУЮ</a>
+        </div>
+    </section>

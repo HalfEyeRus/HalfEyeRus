@@ -1,0 +1,22 @@
+﻿@inherits SoftSmokeViewPage
+<footer class="page-footer">
+    <div class="wrapper">
+        <ul class="social">
+            @foreach(var soc in  GetNestedContent<SocialNetworkItem>(CommonPages.HomePage.SocialNetworks))
+            { 
+                <li><a href="@soc.Link" target="_blank">@soc.Title</a></li>
+            }
+        </ul>
+        <p class="copy">
+            <a href="https://webevolution.ru/">СДЕЛАНО В WEBEVOLUTION</a>
+        </p>
+        <div class="smoke"></div>
+    </div>
+    <div class="modal-content mature-modal" id="matureModal">
+        <span class="title">ВАМ УЖЕ ИСПОЛНИЛОСЬ 18 ЛЕТ?</span>
+        <div class="buttons">
+            <button class="modal-close-alt">ДА</button>
+            <a href="about:blank">нет</a>
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocumentType>
+  <Info>
+    <Name>Sitemap</Name>
+    <Alias>Sitemap</Alias>
+    <Icon>icon-sitemap color-blue</Icon>
+    <Thumbnail>folder.png</Thumbnail>
+    <Description />
+    <AllowAtRoot>False</AllowAtRoot>
+    <IsListView>False</IsListView>
+    <Compositions>
+      <Composition>NavigationComponent</Composition>
+    </Compositions>
+    <AllowedTemplates />
+    <DefaultTemplate></DefaultTemplate>
+  </Info>
+  <Structure />
+  <GenericProperties />
+  <Tabs />
+</DocumentType>

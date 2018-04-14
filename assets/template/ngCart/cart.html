@@ -1,0 +1,79 @@
+﻿<div ng-show="ngCart.getTotalItems() === 0">
+    <div class="row">
+        <h1>Ваша корзина пуста</h1>
+    </div>
+</div>
+
+<div class="total-block" ng-show="ngCart.getTotalItems() > 0" ng-init="ngCart.$cart.delivery = ngCart.$cart.delivery || 1; ngCart.$cart.payMethod = ngCart.$cart.payMethod || 'cash'">
+    <h2 class="title for-big">Сумма</h2>
+    <div class="input-container">
+        <label for="delivery">Доставка</label>
+        <select name="delivery" id="delivery"
+                ng-model="ngCart.$cart.delivery"
+                ng-options="item.id as item.label for item in ngCart.deliveryMethods"></select>
+    </div>
+    <div class="input-container">
+        <label for="payment">Оплата</label>
+        <select name="payment" id="payment"
+                ng-model="ngCart.$cart.payMethod"
+                ng-options="item.id as item.label for item in ngCart.paymentMethods"></select>
+    </div>
+
+    <div class="subtotal">
+        <p><span>Предварительный итог</span><span>{{ ngCart.getSubTotal() }} ₽</span></p>
+        <p ng-show="ngCart.getShipping() != 0"><span>(Доставка)</span><span>{{  ngCart.getShipping() }} ₽</span></p>
+    </div>
+    <div class="total">
+        <p><span>Общая сумма</span><span>{{ ngCart.totalCost() }} ₽</span></p>
+    </div>
+    <a href="{{nextStepUrl}}" ng-click="$event.preventDefault(); ;next(nextStepUrl)" class="button-dark-alt">ОФОРМИТЬ ЗАКАЗ</a>
+</div>
+<div class="cart-items" ng-show="ngCart.getTotalItems() > 0">
+    <div class="table-head not-small">
+        <span>Товар</span>
+        <span>Цена</span>
+        <span>Кол-во</span>
+        <span>Итог</span>
+    </div>
+    <div class="row" ng-repeat="item in ngCart.getCart().items track by $index">
+        <div class="img">
+            <img src="{{item._data.imageUrl}}" alt="">
+        </div>
+        <div class="subtable">
+            <div class="row">
+                <p>
+                    <a href="#">{{ item.getName() }} </a>
+                </p>
+                <div>
+                    <small class="for-small">Цена</small>
+                    <span class="price">{{ item.getPrice() }} ₽</span>
+                </div>
+                <div>
+                    <small class="for-small">Кол-во</small>
+                    <input type="number" value="{{ item.getQuantity() | number }}" ng-change="item.change()"  ng-model="item._quantity" min="1" max="99">
+                </div>
+                <div>
+                    <small class="for-small">Итог</small>
+                    <span class="price">{{ item.getPrice() * item.getQuantity() }} ₽</span>
+                </div>
+                <div>
+                    <button class="remove" type="button" ng-click="ngCart.removeItemById(item.getId())"></button>
+                </div>
+            </div>
+            
+            <div class="row" ng-show="item._data.addCost != null">
+                <p>Гравировка</p>
+                <div>
+                    <small class="for-small">Цена</small>
+                    <span class="price">{{item._data.addCost}} ₽</span>
+                </div>
+                <div>
+
+                </div>
+                <div>
+                    <span class="price">{{item.getAddCost()}} ₽</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

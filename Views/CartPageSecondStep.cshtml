@@ -1,0 +1,65 @@
+﻿@inherits SoftSmokeViewPage
+@{
+	Layout = "_Layout.cshtml";
+    ViewBag.PageClass = "cart-second-page";
+}
+
+
+<div class="main-content">
+    <div class="wrapper">
+        
+
+        <div class="header">
+            <a href="@CommonPages.HomePage.Url" title="@_D("Cart.ToHomePage")">@_D("Cart.ToHomePage")</a>
+        </div>
+        <div class="all-products accordion-alt">
+            <ngcart-cart-short></ngcart-cart-short>
+        </div>
+        <form class="form-standard" ng-controller="CartController" name="orderForm" novalidate ng-disabled="submitProcess || resp.success" ng-submit="orderForm.$valid && submit()">
+            <div class="fields" ng-cloak>
+                <fieldset>
+                    <legend>@_D("Cart.Info")</legend>
+                    <div class="row">
+                        <div class="input-container">
+                            <input type="text" name="name" placeholder="@_D("Cart.Form.Name")" ng-model="model.name" required="required">
+                        </div>
+                        <div class="input-container">
+                            <input type="text" name="surname" placeholder="@_D("Cart.Form.Surname")" ng-model="model.surname" required="required">
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <input type="tel" name="tel" placeholder="@_D("Cart.Form.Phone")" ng-model="model.phone" required="required">
+                    </div>
+                    <div class="input-container">
+                        <input type="email" name="email" placeholder="Email" ng-model="model.email" required="required">
+                    </div>
+                </fieldset>
+                <fieldset ng-show="ngCart.$cart.delivery != 2">
+                    <legend>@_D("Cart.Form.Address")</legend>
+                    <div class="input-container">
+                        <input type="text" name="town" placeholder="@_D("Cart.Form.City")" strict-city="true" ng-model="model.city" ng-required="ngCart.$cart.delivery != 2">
+                    </div>
+                    <div class="input-container">
+                        <input type="text" name="street" placeholder="@_D("Cart.From.Street")" ng-model="model.street" ng-required="ngCart.$cart.delivery != 2">
+                    </div>
+                    <div class="row">
+                        <div class="input-container">
+                            <input type="text" name="house" placeholder="@_D("Cart.From.House")" ng-model="model.house" ng-required="ngCart.$cart.delivery != 2">
+                        </div>
+                        <div class="input-container">
+                            <input type="text" name="flat" placeholder="@_D("Cart.Form.Apartment")" ng-model="model.flat" ng-required="ngCart.$cart.delivery != 2">
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            
+            
+
+            <div class="foot">
+                <a href="@CommonPages.CartPage.Url/?step=1" class="back">@_D("Cart.Form.GoBack")</a>
+                <span class="form-error" ng-show="!orderForm.$valid && orderForm.$submitted" ng-class="{visible: !orderForm.$valid}">@_D("Cart.Form.Req")</span>
+                <button class="button-dark-alt" type="submit">@_D("Cart.Form.Order")</button>
+            </div>
+        </form>
+    </div>
+</div>

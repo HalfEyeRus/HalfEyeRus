@@ -1,0 +1,40 @@
+﻿@inherits SoftSmokeViewPage<FaqPage>
+@{
+	Layout = "_Layout.cshtml";
+    ViewBag.PageClass = "faq-page";
+}
+
+<section class="main-content">
+    <div class="wrapper">
+        <h2>@Model.Header</h2>
+        
+        @foreach(var item in GetNestedContent<FaqSectionBlock>(Model.Sections))
+        { 
+        <h3>
+            @item.Title
+            <button class="acc-trig">
+                <span class="open">@_D("FAQ.Open")</span><span class="close">@_D("FAQ.Close")</span> @_D("FAQ.All")
+            </button>
+        </h3>
+            <div class="acc-sect">
+                @foreach(var question in GetNestedContent<TextWithHeaderBlock>(item.Items))
+                { 
+                    <div class="accordion-light">
+                        <h4 class="accordion-header">@question.Header</h4>
+                        <div class="accordion-content">
+                            <p>
+                                @question.Text.ApplyBreakLines()
+                            </p>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+
+        <aside>
+            <span class="title">@_D("FAQ.MoreQuestions")</span>
+
+            @Html.Partial("_FeedbackForm")
+        </aside>
+    </div>
+</section>

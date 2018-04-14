@@ -1,0 +1,45 @@
+﻿@inherits SoftSmokeViewPage
+@{
+    var links = CommonPages.HomePage.MainMenu.Where(x => x != null && x.IsVisible()).ToArray();
+}
+<header class="page-header">
+    <div class="wrapper">
+        <h1 class="logo"><a href="@CommonPages.HomePage.Url">SoftSmoke</a></h1>
+        <nav class="for-big">
+
+            @foreach (var link in links)
+            {
+                <a href="@link.Url">@link.NavigationTitle()</a>
+            }
+        </nav>
+        @Html.Partial("_LangSwitcher")
+        <button class="open-menu"></button>
+    </div>
+    <div class="submenu">
+        <div>
+            <button class="close-menu"></button>
+            <ul>
+                <li>
+                    <ngcart-summary url="@(CommonPages.Get<CartPage>().Url)"></ngcart-summary>
+                </li>
+                <li>
+                    <ul class="not-big nav">
+                        @foreach (var link in links)
+                        {
+                            <li><a href="@link.Url">@link.NavigationTitle()</a></li>
+                        }
+                    </ul>
+                </li>
+                @if(CommonPages.DeliveryPage != null)
+                {
+                    <li><a href="@CommonPages.DeliveryPage.Url">@CommonPages.DeliveryPage.NavigationTitle()</a></li>
+                }
+                @if(CommonPages.FaqPage != null)
+                {
+                    <li><a href="@CommonPages.FaqPage.Url">@CommonPages.FaqPage.NavigationTitle()</a></li>
+                }
+                <li><a href="@CommonPages.ContactsPage.IfNotNull(x=>x.Url, "#")">КОНТАКТЫ</a></li>
+            </ul>
+        </div>
+    </div>
+</header>

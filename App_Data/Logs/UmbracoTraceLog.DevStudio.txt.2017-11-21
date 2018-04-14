@@ -1,0 +1,60 @@
+﻿ 2017-11-21 11:56:36,715 [P6332/D4/T18] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.6.5 application starting on DEVSTUDIO
+ 2017-11-21 11:56:36,731 [P6332/D4/T18] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2017-11-21 11:56:36,739 [P6332/D4/T18] INFO  Umbraco.Core.PluginManager - Hash determined (took 7ms)
+ 2017-11-21 11:56:36,782 [P6332/D4/T18] INFO  Umbraco.Core.MainDom - Acquiring MainDom...
+ 2017-11-21 11:56:36,783 [P6332/D4/T18] INFO  Umbraco.Core.MainDom - Acquired MainDom.
+ 2017-11-21 11:56:36,785 [P6332/D4/T18] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-11-21 11:56:36,839 [P6332/D4/T18] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 54ms)
+ 2017-11-21 11:56:36,840 [P6332/D4/T18] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IApplicationStartupHandler
+ 2017-11-21 11:56:36,841 [P6332/D4/T18] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IApplicationStartupHandler (took 1ms)
+ 2017-11-21 11:56:36,861 [P6332/D4/T18] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-11-21 11:56:36,861 [P6332/D4/T18] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-11-21 11:56:36,861 [P6332/D4/T18] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2017-11-21 11:56:36,862 [P6332/D4/T18] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 0ms)
+ 2017-11-21 11:56:36,862 [P6332/D4/T18] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-11-21 11:56:36,862 [P6332/D4/T18] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-11-21 11:56:36,863 [P6332/D4/T18] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2017-11-21 11:56:36,864 [P6332/D4/T18] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyValueConverter (took 1ms)
+ 2017-11-21 11:56:36,876 [P6332/D4/T18] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-11-21 11:56:36,877 [P6332/D4/T18] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-11-21 11:56:36,877 [P6332/D4/T18] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.Mvc.SurfaceController
+ 2017-11-21 11:56:36,877 [P6332/D4/T18] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.Mvc.SurfaceController (took 0ms)
+ 2017-11-21 11:56:36,878 [P6332/D4/T18] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-11-21 11:56:36,878 [P6332/D4/T18] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-11-21 11:56:36,878 [P6332/D4/T18] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.WebApi.UmbracoApiController
+ 2017-11-21 11:56:36,879 [P6332/D4/T18] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.WebApi.UmbracoApiController (took 1ms)
+ 2017-11-21 11:56:36,934 [P6332/D4/T18] ERROR Umbraco.Core.PluginManager - Error creating type WeUmbraco.Events.ContentTypeEventHandler`1
+System.ArgumentException: Невозможно создать экземпляр WeUmbraco.Events.ContentTypeEventHandler`1[T], поскольку параметр Type.ContainsGenericParameters является истиной.
+   в System.RuntimeType.CreateInstanceCheckThis()
+   в System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   в System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   в System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   в System.Activator.CreateInstance(Type type)
+   в Umbraco.Core.ActivatorServiceProvider.GetService(Type serviceType)
+   в Umbraco.Core.ServiceProviderExtensions.CreateInstances[T](IServiceProvider serviceProvider, IEnumerable`1 types, ILogger logger, Boolean throwException)
+ 2017-11-21 11:56:37,803 [P6332/D4/T18] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2017-11-21 11:56:37,919 [P6332/D4/T18] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Models.PublishedContent.PublishedContentModel
+ 2017-11-21 11:56:37,922 [P6332/D4/T18] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Models.PublishedContent.PublishedContentModel (took 2ms)
+ 2017-11-21 11:56:37,992 [P6332/D4/T18] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2017-11-21 11:56:38,038 [P6332/D4/T18] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2017-11-21 11:56:38,156 [P6332/D4/T18] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2017-11-21 11:56:38,220 [P6332/D4/T18] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 1572ms)
+ 2017-11-21 11:56:38,352 [P6332/D4/T78] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://ss.t-we.ru:80/umbraco (UmbracoModule request)
+ 2017-11-21 11:56:38,798 [P6332/D4/T78] INFO  umbraco.content - Load Xml from file...
+ 2017-11-21 11:56:38,800 [P6332/D4/T78] INFO  umbraco.content - Loaded Xml from file.
+ 2017-11-21 11:56:39,218 [P6332/D4/T78] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-11-21 11:56:39,218 [P6332/D4/T78] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-11-21 11:56:39,218 [P6332/D4/T78] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IParameterEditor
+ 2017-11-21 11:56:39,219 [P6332/D4/T78] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IParameterEditor (took 1ms)
+ 2017-11-21 11:56:41,880 [P6332/D4/T78] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-11-21 11:56:41,880 [P6332/D4/T78] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-11-21 11:56:41,880 [P6332/D4/T78] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.Deploy.IServiceConnector
+ 2017-11-21 11:56:41,881 [P6332/D4/T78] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.Deploy.IServiceConnector (took 0ms)
+ 2017-11-21 11:57:38,836 [P6332/D4/T103] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-11-20 11:57:38
+ 2017-11-21 11:57:38,903 [P6332/D4/T92] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-11-21 11:57:38,903 [P6332/D4/T92] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-11-21 11:57:38,903 [P6332/D4/T92] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2017-11-21 11:57:38,904 [P6332/D4/T92] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper (took 0ms)
+ 2017-11-21 15:57:38,851 [P6332/D4/T102] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-11-20 15:57:38
+ 2017-11-21 19:57:38,862 [P6332/D4/T15] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-11-20 19:57:38
+ 2017-11-21 23:57:41,122 [P6332/D4/T81] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-11-20 23:57:41

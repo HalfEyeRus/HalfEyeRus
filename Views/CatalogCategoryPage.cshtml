@@ -1,0 +1,69 @@
+﻿@using System.Dynamic
+@using System.Security.Cryptography
+@using Newtonsoft.Json
+@using WeUmbraco
+@inherits SoftSmokeViewPage<CatalogCategoryPage>
+@{
+    Layout = "_Layout.cshtml";
+    ViewBag.PageClass = "catalog-page";
+}
+
+<article class="main-content mix-main">
+    <header class="promo-top-block">
+        <div class="wrapper">
+            <div class="filter-nav">
+                <h2>
+                    <button class="filter" data-filter="all">@Model.NavigationTitle()</button>
+                </h2>
+                <ul>
+                    @foreach (var filter in Model.Children<ProductPage>().SelectMany(x => x.Filter.PickedKeys.Select(p => p.Trim())).Distinct())
+                    {
+                        <li>
+                            <button class="filter" data-filter=".category-@Umbraco.CreateHash(filter)">@filter</button>
+                        </li>
+                    }
+                </ul>
+            </div>
+            <div class="img" style="background-image:url(@Umbraco.MediaAsUrl(Model.HeaderImage, 890, 558));"></div>
+        </div>
+    </header>
+    <div class="mix-container">
+        <div class="wrapper">
+            <div class="catalog-container">
+                @foreach (var product in Model.Children<ProductPage>())
+                {
+                    dynamic dataAttribute = new ExpandoObject();
+                    dataAttribute.imageUrl = Umbraco.MediaAsUrl(product.Thumbnail, 233, 350);
+                    dataAttribute.smallImageUrl = Umbraco.MediaAsUrl(product.Thumbnail, 70, 105);
+                    <div class="catalog-item mix @String.Join(" ",product.Filter.PickedKeys.Select(x=> "category-" + Umbraco.CreateHash(x.Trim())))">
+                        <a href="@(product.InStock ? product.Url : "javascript: void(0);")" class="catalog-link"></a>
+                        <div class="img">
+                            <img src="@Umbraco.MediaAsUrl(product.Thumbnail, 260, 390)" alt="@product.NavigationTitle()">
+                        </div>
+                        @if (product.InStock)
+                        {
+                            <ngcart-addtocart-short id="@product.Id" toordertitle="@_D("Catalog.Order")" title="@_D("Catalog.ToCart")" carturl="@CommonPages.CartPage.Url" data="@JsonConvert.SerializeObject(dataAttribute)"  name="@product.NavigationTitle().Replace("\"", "'")" price="@product.Price" quantity="1" quantity-max="999"></ngcart-addtocart-short>
+                        }
+                        else
+                        {
+                            <button class="button-dark for-big" disabled>@_D("Catalog.OutOfStock")</button>
+                        }
+                        <span class="title">@product.NavigationTitle()</span>
+                        @if (!product.Price.IsNullOrWhiteSpace())
+                        {
+                            if (product.Price.IsDecimal())
+                            {
+                                <span class="price">@product.Price.AsDecimal() ₽</span>
+                            }
+                            else
+                            {
+                                <span class="price">@product.Price</span>
+                            }
+
+                        }
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</article>

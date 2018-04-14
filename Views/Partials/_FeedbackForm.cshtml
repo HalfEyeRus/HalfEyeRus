@@ -1,0 +1,27 @@
+﻿@inherits SoftSmokeViewPage
+    
+
+<button class="button-light modal-open" data-modal="#questionModal">@_D("Common.WriteToUs")</button>
+<div id="questionModal" class="modal-content feedback-modal" ng-controller="FeedbackRequest">
+    <form id="feedbackModal" class="form-standard" name="feedbackForm" novalidate ng-disabled="submitProcess || resp.success" ng-submit="feedbackForm.$valid && submit()">
+        <fieldset>
+            <legend>@_D("FeedbackForm.Header")</legend>
+            <div class="row2">
+                <div class="input-container">
+                    <input type="text" name="name" placeholder="@_D("FeedbackForm.Name")" required ng-model="model.name">
+                </div>
+                <div class="input-container">
+                    <input type="tel" name="phone" placeholder="@_D("FeedbackForm.Phone")" required ng-model="model.phone">
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>@_D("FeedbackForm.Question")</legend>
+            <textarea name="message" placeholder="@_D("FeedbackForm.Text")" required ng-model="model.message"></textarea>
+        </fieldset>
+        <span class="form-error">@_D("FeedbackForm.Validation")</span>
+        <button type="submit" class="button-dark-alt">@_D("FeedbackForm.Send")</button>
+    </form>
+</div>
+
+<div class="modal-content form-success" id="formSuccess"></div>
